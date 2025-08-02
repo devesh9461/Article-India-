@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Website</title>
+    <!-- Use Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Dark background */
+            color: #e2e8f0; /* Light text */
+        }
+        /* Custom styling for the Back button icon */
+        .back-icon {
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: currentColor;
+            -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414-4.95 4.95z' fill='currentColor'/%3E%3C/svg%3E") no-repeat center;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414-4.95 4.95z' fill='currentColor'/%3E%3C/svg%3E") no-repeat center;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header and Navigation -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto p-4 flex items-center justify-between flex-wrap">
+            <!-- Back button -->
+            <button id="back-button" class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors duration-200">
+                <span class="back-icon"></span>
+                <span class="font-medium text-lg">Back</span>
+            </button>
+            <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+            </h1>
+            <div class="w-16"></div> <!-- Placeholder to balance the layout -->
+        </nav>
+    </header>
+
+    <!-- Main Content Section with Article Cards -->
+    <main class="container mx-auto p-8 flex-grow">
+        <!-- Responsive Grid for Articles -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Big Featured Card -->
+            <div class="md:col-span-2 lg:col-span-2 bg-slate-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <h2 class="text-3xl font-bold text-purple-400 mb-4">The State of Indian Politics in 2025</h2>
+                <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                    India’s political landscape in 2025 reflects a blend of change and continuity, shaped by the recent general elections, shifting regional power, youth engagement, and the ongoing digital revolution.
+                    <br><br>
+                     Coalition Era: Modi’s Third Term and New Alliances
+                     In June 2024, Prime Minister Narendra Modi secured a historic third consecutive term. However, while the Bharatiya Janata Party (BJP) maintained its national vote share, it lost enough seats that it now governs in coalition,
+                     relying on critical regional allies within the National Democratic Alliance (NDA). This marks a major shift: for the first time since coming to power, 
+                     the BJP must share executive authority and negotiate more complex political demands, notably from states like Bihar and Andhra Pradesh seeking additional
+                     fiscal support. The aura of BJP's electoral invincibility has dimmed, and managing coalition dynamics is now central to national governance.
+                    <br><br>
+                </p>
+            </div>
+
+            <!-- Small Card 1 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-blue-300 mb-3">Rise of Regional Leaders</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                    Regional parties and state leaders have become more influential, reflecting voters’ increasing focus on local governance and issues.
+                    This has heightened the importance of federal flexibility and brought more diversity to national policy debates.
+                    <br><br>
+                    <br><br>
+                    Youth and Digital Influence: With India’s youth forming a massive portion of the electorate, their priorities (jobs, education, climate policy) 
+                    are dominating political discourse. Campaigns and parties have adopted advanced digital and AI-driven strategies for voter outreach and sentiment analysis.
+                </p>
+            </div>
+
+            <!-- Small Card 2 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-purple-300 mb-3">Women’s Empowerment</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                   The momentum for greater women’s participation in politics continues. Initiatives like the Women’s Reservation Bill and active recruitment are 
+                   pushing for higher representation in decision-making bodies
+                </p>
+            </div>
+
+            <!-- Small Card 3 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-blue-300 mb-3">The ‘One Nation, One Election’ Debate</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                    The proposal to synchronize national and state elections has been widely discussed. Proponents argue it would streamline governance, but critics
+                    worry about the impact on state autonomy. This debate remains central and unresolved in 2025.
+                </p>
+            </div>
+
+            <!-- Small Card 4 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-purple-300 mb-3">Social Media and Political Narrative</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                    Social platforms shape voter opinion and campaign messaging more than ever, but concerns about misinformation and polarization persist.
+                </p>
+            </div>
+ 
+            <!-- Small Card 5 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-blue-300 mb-3">Major Policy and Economic Challenges</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                    India’s economy is poised to become Asia’s second largest in 2025, trailing only China, and the fourth largest globally. Yet, job creation has
+                    not matched economic growth, with persistent unemployment among the youth and a growing informal workforce. Campaigns promise millions of new 
+                    jobs yearly, but independent analysts are skeptical about these projections.
+                    <br><br>
+                    <br><br>
+                    Economic pressures, from high inflation and a weakening rupee to tepid private investment, challenge the government's ambitious reform agenda. 
+                    Additionally, the government must navigate sensitive social issues, such as whether to conduct a caste census—a measure supported by regional 
+                    allies but opposed by Hindu nationalists within the BJP.
+                </p>
+            </div>
+
+            <!-- Small Card 6 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-blue-300 mb-3">Law Commission’s 2025 Report</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                    In July 2025, the Law Commission of India released a much-anticipated report on the feasibility of holding simultaneous elections for the 
+                    Lok Sabha and all State Legislative Assemblies. This report followed months of consultation with political leaders, experts, and the public, 
+                    and is likely to shape future electoral reforms. The commission argues that synchronized elections could streamline governance, improve 
+                    administrative efficiency, and reduce the heavy costs and frequent disruptions caused by multiple election cycles.
+                    <br><br>
+                </p>
+            </div>
+
+            <!-- Small Card 7 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-blue-300 mb-3">Economic and Administrative Arguments</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                    The proposal is being framed as a solution to rising election costs and administrative burdens. Organizing one large electoral event rather than 
+                    multiple staggered ones is seen by many as a way to allocate public resources better, reduce manpower strains on security and civil services, and
+                    potentially boost voter turnout by concentrating attention and resources.
+                    <br><br>
+                </p>
+            </div>
+
+            
+
+        </div>
+
+        <!-- Comments Section -->
+        <section class="mt-16 bg-slate-900 rounded-2xl p-8 shadow-2xl">
+            <h2 class="text-3xl font-bold text-white mb-6">Leave a Comment</h2>
+            <form id="comment-form" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-300 font-medium mb-2">Your Name</label>
+                    <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-slate-800 text-gray-200 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">
+                </div>
+                <div>
+                    <label for="comment" class="block text-gray-300 font-medium mb-2">Your Comment</label>
+                    <textarea id="comment" name="comment" rows="5" required class="w-full p-3 rounded-lg bg-slate-800 text-gray-200 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105">
+                    Post Comment
+                </button>
+            </form>
+            <div id="comment-message" class="mt-4 p-4 rounded-lg text-center font-medium" style="display:none;"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center text-gray-400 p-4 mt-8">
+        <p>&copy; 2025 Article Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for the back button functionality
+        document.getElementById('back-button').addEventListener('click', function() {
+            // This navigates back in the browser's history.
+            // If the user came from your homepage, it will go back there.
+            window.history.back();
+        });
+
+        // JavaScript for the comment form
+        document.getElementById('comment-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const comment = document.getElementById('comment').value;
+
+            // Simple validation
+            if (name.trim() === '' || comment.trim() === '') {
+                displayMessage('Please fill out all fields.', 'bg-red-500');
+                return;
+            }
+
+            // In a real application, you would send this data to a server.
+            // For this example, we'll just show a success message.
+            console.log(`Comment received from ${name}: "${comment}"`);
+            
+            displayMessage('Thank you for your comment!', 'bg-green-500');
+
+            // Clear the form
+            document.getElementById('comment-form').reset();
+        });
+
+        // Function to display a message to the user
+        function displayMessage(message, colorClass) {
+            const messageDiv = document.getElementById('comment-message');
+            messageDiv.textContent = message;
+            messageDiv.className = `mt-4 p-4 rounded-lg text-center font-medium text-white ${colorClass}`;
+            messageDiv.style.display = 'block';
+
+            // Hide the message after 5 seconds
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

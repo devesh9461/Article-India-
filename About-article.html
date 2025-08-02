@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Article Website</title>
+    <!-- Use Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; 
+            color: #e2e8f0; 
+        }
+       
+        .back-icon {
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: currentColor;
+            -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414-4.95 4.95z' fill='currentColor'/%3E%3C/svg%3E") no-repeat center;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414-4.95 4.95z' fill='currentColor'/%3E%3C/svg%3E") no-repeat center;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header and Navigation -->
+    <header class="bg-gray-800 shadow-md">
+        <nav class="container mx-auto p-4 flex items-center justify-between flex-wrap">
+            <!-- Back button -->
+            <button id="back-button" class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors duration-200">
+                <span class="back-icon"></span>
+                <span class="font-medium text-lg">Back</span>
+            </button>
+            <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+            </h1>
+            <div class="w-16"></div> 
+        </nav>
+    </header>
+
+    <!-- Main Content Section with Article Cards -->
+    <main class="container mx-auto p-8 flex-grow">
+      
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Big Card -->
+            <div class="md:col-span-2 lg:col-span-2 bg-slate-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <h2 class="text-3xl font-bold text-purple-400 mb-4">Our Vision</h2>
+                <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                    In a world of fast-paced information, we strive to be a source of authentic, in-depth, and thoughtful content. We aim to:
+                    Promote Diverse Voices: We provide a platform for writers, journalists, and enthusiasts from all states and territories of India, ensuring a wide range of topics and viewpoints are represented.
+                    Celebrate Culture and Heritage: From ancient traditions and historical monuments to modern-day arts and pop culture, we delve into the cultural nuances that make India so vibrant.
+                    Inspire and Inform: We publish articles that cover a broad spectrum of subjects, including technology, science, business, society, politics, and personal narratives, all with an Indian context.
+                    Foster Community: We believe in the power of conversation. Our platform encourages respectful dialogue and a sense of community among our readers and contributors.
+                </p>
+            </div>
+
+            <!-- Small Card 1 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-blue-300 mb-3">About Us</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                   Welcome to our platform, a dedicated space for stories and insights from the heart of India. We are more than just a website; we are a digital hub for a billion voices, a mosaic of perspectives, and a celebration of 
+                   the rich tapestry that is India. Our mission is to bring you articles that are not only informative but also deeply rooted in the Indian experience. We believe that every corner of the country, every community, 
+                   and every individual has a unique story to tell, and our platform is built to amplify those stories.
+                </p>
+            </div>
+
+            <!-- Small Card 2 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-purple-300 mb-3">Our Content</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                    Our articles are carefully curated and created to offer a fresh perspective on topics that matter. You can expect to find:
+                    In-depth Analysis: Thought-provoking pieces on current affairs, social trends, and economic developments.
+                    Regional Stories: Stories that highlight the unique traditions, challenges, and successes of different regions of India.
+                </p>
+            </div>
+
+            <!-- Small Card 3 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-blue-300 mb-3">Creative Expressions</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                      Articles on Indian literature, art, cinema, and music.
+                </p>
+            </div>
+
+            <!-- Small Card 4 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-purple-300 mb-3">Join Our Journey</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                  We are committed to building a platform that truly reflects the spirit of India. Whether you are a reader looking 
+                  for engaging content or a writer with a story to share, we invite you to be a part of our journey. Together, let's explore, 
+                  learn, and celebrate the incredible stories that define our nation.   
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center text-gray-400 p-4 mt-8">
+        <p>&copy; 2025 My Article Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('back-button').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

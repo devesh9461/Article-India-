@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Website</title>
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; 
+            color: #e2e8f0; 
+        }
+        
+        .back-icon {
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: currentColor;
+            -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414-4.95 4.95z' fill='currentColor'/%3E%3C/svg%3E") no-repeat center;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414-4.95 4.95z' fill='currentColor'/%3E%3C/svg%3E") no-repeat center;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto p-4 flex items-center justify-between flex-wrap">
+            <button id="back-button" class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors duration-200">
+                <span class="back-icon"></span>
+                <span class="font-medium text-lg">Back</span>
+            </button>
+            <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+            </h1>
+            <div class="w-16"></div> 
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-8 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="md:col-span-2 lg:col-span-2 bg-slate-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <h2 class="text-3xl font-bold text-purple-400 mb-4">Economic Overview and Current Performance</h2>
+                <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                    India has solidified its position as the world's fastest-growing major economy, demonstrating remarkable resilience despite global uncertainties.
+                    The economy recorded a GDP growth of 6.5% in FY 2024-25, maintaining its status as a key driver of global economic growth. This performance, while
+                    representing a four-year low compared to previous years, positions India significantly ahead of other major economies, with projections showing continued
+                    growth between 6.3% to 6.8% for FY 2025-26.
+                    With a nominal GDP of approximately ₹330.68 lakh crore ($4.187 trillion) in FY 2024-25, India remains the world's fourth-largest economy and is projected 
+                    to become the third-largest by 2030 with an estimated GDP of $7.3 trillion. The economy's trajectory reflects a transition from dependency to becoming a 
+                    self-reliant, globally competitive powerhouse.
+                    <br><br>
+                    Sectoral Structure and Employment :- Service Sector Dominance India's economy has undergone a remarkable structural transformation, with the services sector 
+                    contributing approximately 55-60% to GDP, making it the largest and fastest-growing component. This sector encompasses information technology, financial services,
+                    healthcare, education, and telecommunications. The IT services industry, led by companies like TCS, Infosys, and Wipro, has positioned India as a global leader in 
+                    technology outsourcing.
+                    The services sector's contribution to Gross Value Added (GVA) increased from 50.6% in FY14 to 55.3% in FY25, with an average growth rate of 8.3% between FY23 and FY25.
+                    This transformation represents India's unique development path, transitioning directly from agriculture to services, largely bypassing the typical industrial phase.
+                    <br><br>
+                    Manufacturing and Industrial Sector The secondary sector, encompassing manufacturing, construction, and industries, contributes approximately 25-30% to India's GDP. 
+                    Manufacturing accounts for a significant portion at around 15% of GDP, though this remains below the government's target of increasing it to 25% through initiatives 
+                    like Make in India.
+                    Key manufacturing industries include automobiles, chemicals, textiles, pharmaceuticals, and steel production. The eight core sectors—electricity, steel, refinery products, 
+                    crude oil, coal, cement, natural gas, and fertilizers—have a combined weight of over 40% in the Index of Industrial Production.
+                    <br><br>
+                    Agricultural Sector Despite employing approximately 40-45% of the workforce, agriculture contributes only 16-17% to GDP. This disparity highlights the sector's productivity 
+                    challenges and the need for modernization. The primary sector, which includes agriculture, forestry, fishing, and mining, contributed 19.7% to nominal GDP in FY 2024-25.
+                    Agriculture remains crucial for food security and rural livelihoods, with India ranking among the top producers of rice, wheat, pulses, and various agricultural commodities.
+                    However, the sector faces challenges including fragmented land holdings, dependence on monsoons, and limited access to modern technology.
+                </p>
+            </div>
+
+            <!-- Small Card 1 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-blue-300 mb-3">Employment Landscape </h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                    India's employment scenario presents a mixed picture. The unemployment rate declined to 4.9% in 2024, representing an improvement from 5.0% in 2023. However, regional and demographic 
+                    variations persist, with urban unemployment at 6.7% and rural unemployment at 4.2%.
+                    The Labour Force Participation Rate (LFPR) stands at approximately 56.2%, indicating significant scope for improvement, particularly among women and youth. Manufacturing employs the largest
+                    share in organized sectors at 43.74%, followed by education at 16.53% and IT/BPO at 11.49%.
+                    <br><br>
+                    Foreign Direct Investment and Trade
+                    FDI Performance :-
+                    India has emerged as a preferred destination for foreign investment, recording FDI inflows of USD 81.04 billion in FY 2024-25, representing a 14% increase from the previous year. The services
+                    sector attracted the highest FDI at 19% of total inflows, followed by computer software and hardware at 16%.
+                    Key source countries include Singapore (30%), Mauritius (17%), and the United States (11%). Manufacturing FDI grew by 18%, reaching USD 19.04 billion, reflecting India's increasing attractiveness
+                    as a manufacturing hub.
+                    <br><br>
+                    Trade Dynamics :-
+                    India's trade performance shows mixed results, with total exports during FY 2024-25 estimated at USD 820.93 billion, registering 5.50% growth. However, the country maintains a trade deficit, with 
+                    total imports at USD 915.19 billion.
+                    Major export destinations include the United States (17.73% share), UAE (8.15%), and Netherlands (5.12%). Import partners are led by China (15.06%), Russia (9.10%), and UAE (7.11%), highlighting 
+                    India's integration into global supply chains while maintaining trade dependencies.
+                    
+                </p>
+            </div>
+
+            <!-- Small Card 2 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-purple-300 mb-3">Financial Sector and Digital Economy</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                   Stock Market Performance
+                   India's capital markets have demonstrated robust growth, with the BSE stock market capitalization to GDP ratio at 136% at the end of December 2024, significantly higher than China (65%) and Brazil (37%).
+                   The markets have shown resilience despite global uncertainties, though recent performance has been affected by trade tensions and policy uncertainties.
+                   <br><br>
+                   Demographic Dividend and Human Capital
+                   India's demographic profile presents a significant opportunity, with 65% of the population under 35 years and a median age of 28 years. The working-age population (15-59 years) comprises 62.5% of the total 
+                   population, positioning India advantageously for economic growth.
+                   However, realizing this demographic dividend requires addressing challenges in education, skill development, and employment generation. The youth unemployment rate remains a concern, with significant variations 
+                   across regions and demographic groups.
+                </p>
+            </div>
+
+            <!-- Small Card 3 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-blue-300 mb-3">Macroeconomic Indicators</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                   Inflation Management
+                   India has successfully managed inflation within the RBI's target range. Consumer Price Index (CPI) inflation declined to 2.1% in June 2025 from higher levels in previous quarters. The average inflation rate 
+                   for the last three quarters shows CPI at 3.7% in Q4 2024-25, well within the RBI's tolerance band of 4% ±2%.
+                   <br><br>
+                   Monetary Policy
+                   The Reserve Bank of India has adopted an accommodative stance, cutting the repo rate to 5.50% following three consecutive reductions totaling 100 basis points since February 2025. This monetary easing aims 
+                   to support economic growth amid global uncertainties while maintaining price stability
+                   <br><br>
+                   Fiscal Position
+                   India achieved its fiscal deficit target of 4.8% of GDP for FY 2024-25, demonstrating fiscal discipline. Total revenue receipts amounted to ₹30.78 lakh crore while total expenditure stood at ₹46.55 lakh crore. 
+                   The government maintains a commitment to fiscal consolidation while supporting growth through infrastructure investment
+                </p>
+            </div>
+
+            <!-- Small Card 4 -->
+            <div class="bg-slate-700 rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <h3 class="text-xl font-bold text-purple-300 mb-3">Infrastructure Development</h3>
+                <p class="text-gray-400 text-base mb-4 flex-grow">
+                    The government has made infrastructure development a priority, allocating ₹11.11 lakh crore for capital expenditure in 2024-25, representing 3.4% of GDP. Infrastructure spending has grown exponentially, with budget allocations reaching ₹10 lakh crore in 2023-24.
+                    Key focus areas include transportation corridors, digital infrastructure, energy security, and urban development. The government plans to maintain strong fiscal support for infrastructure over the next five years while encouraging private sector participation through viability gap funding.
+                    <br><br>
+                    Future Prospects
+                    Strong Domestic Demand: India's large and growing middle class provides a robust domestic market.
+                    Demographic Advantage: The young population presents opportunities for increased productivity and consumption.
+                    Digital Transformation: Continued digitalization across sectors enhances efficiency and creates new economic opportunities.
+                    Infrastructure Investment: Sustained government focus on infrastructure development supports long-term growth.
+                    Reform Momentum: Ongoing structural reforms improve the business environment and attract investment.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Comments Section -->
+        <section class="mt-16 bg-slate-900 rounded-2xl p-8 shadow-2xl">
+            <h2 class="text-3xl font-bold text-white mb-6">Leave a Comment</h2>
+            <form id="comment-form" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-300 font-medium mb-2">Your Name</label>
+                    <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-slate-800 text-gray-200 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">
+                </div>
+                <div>
+                    <label for="comment" class="block text-gray-300 font-medium mb-2">Your Comment</label>
+                    <textarea id="comment" name="comment" rows="5" required class="w-full p-3 rounded-lg bg-slate-800 text-gray-200 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105">
+                    Post Comment
+                </button>
+            </form>
+            <div id="comment-message" class="mt-4 p-4 rounded-lg text-center font-medium" style="display:none;"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center text-gray-400 p-4 mt-8">
+        <p>&copy; 2025 Article Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('back-button').addEventListener('click', function() {
+            window.history.back();
+        });
+
+        document.getElementById('comment-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const name = document.getElementById('name').value;
+            const comment = document.getElementById('comment').value;
+
+            
+            if (name.trim() === '' || comment.trim() === '') {
+                displayMessage('Please fill out all fields.', 'bg-red-500');
+                return;
+            }
+            console.log(`Comment received from ${name}: "${comment}"`);
+            
+            displayMessage('Thank you for your comment!', 'bg-green-500');
+
+            document.getElementById('comment-form').reset();
+        });
+
+        function displayMessage(message, colorClass) {
+            const messageDiv = document.getElementById('comment-message');
+            messageDiv.textContent = message;
+            messageDiv.className = `mt-4 p-4 rounded-lg text-center font-medium text-white ${colorClass}`;
+            messageDiv.style.display = 'block';
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
