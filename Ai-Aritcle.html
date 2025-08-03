@@ -28,11 +28,11 @@
 
     <!-- Main Container -->
     <div class="container mx-auto max-w-5xl px-6 py-12 md:py-20">
-         <button id="back-button" class="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors duration-200">
-                <span class="back-icon"></span>
-                <span class="font-medium text-lg">Back</span>
-            </button>
-
+        <a href="#" onclick="history.back()" class="absolute top-4 left-4 sm:top-6 sm:left-6 p-2 rounded-full bg-gray-200 text-gray-600 hover:bg-gray-300 transition-colors duration-200" aria-label="Go back">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+        </a>
         <!-- Header Section -->
         <header class="text-center mb-12 md:mb-16">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-gradient">
