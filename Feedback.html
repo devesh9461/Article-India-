@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed top-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-blue-600">Website Feedback</h1>
+      <a href="index.html" 
+         class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+        Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <!-- Feedback Form -->
+  <section class="min-h-screen flex items-center justify-center px-4 py-24">
+    <div class="bg-white shadow-2xl rounded-2xl p-8 md:p-12 max-w-2xl w-full">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">We Value Your Feedback 💬</h2>
+      <p class="text-center text-gray-600 mb-8">
+        Please share your thoughts and help us improve your experience.
+      </p>
+      
+      <form action="#" method="POST" class="space-y-6">
+        
+        <!-- User Name -->
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Your Name</label>
+          <input type="text" placeholder="Enter your name" 
+                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" required>
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Email Address</label>
+          <input type="email" placeholder="Enter your email" 
+                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" required>
+        </div>
+
+        <!-- Interesting Facts -->
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Interesting Facts About Website</label>
+          <textarea rows="3" placeholder="What did you find interesting about our site?" 
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"></textarea>
+        </div>
+
+        <!-- Questions -->
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">How would you rate your experience?</label>
+          <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
+            <option value="">Select rating</option>
+            <option>⭐ Very Poor</option>
+            <option>⭐⭐ Poor</option>
+            <option>⭐⭐⭐ Average</option>
+            <option>⭐⭐⭐⭐ Good</option>
+            <option>⭐⭐⭐⭐⭐ Excellent</option>
+          </select>
+        </div>
+
+        <!-- Improvements -->
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Any Suggestions to Improve?</label>
+          <textarea rows="3" placeholder="Share your ideas..." 
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"></textarea>
+        </div>
+
+        <!-- Features -->
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Which features do you want us to add?</label>
+          <div class="space-y-2">
+            <label class="flex items-center gap-2">
+              <input type="checkbox" class="rounded text-blue-600"> More Articles
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" class="rounded text-blue-600"> User Comments
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" class="rounded text-blue-600"> Notifications
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit"
+                class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold py-3 rounded-lg shadow-lg hover:scale-105 transition transform duration-300">
+          Submit Feedback
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>© 2025 Feedback Page | Article India</p>
+  </footer>
+
+</body>
+</html>

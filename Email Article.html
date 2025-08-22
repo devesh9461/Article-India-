@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article India : prototype Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@tailwindcss/forms"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+  <!-- Feather Icons CDN -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed top-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-blue-600">Article India</h1>
+      <a href="mailto:jangiddevesh74@gmail.com" 
+         class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+        Send Article
+      </a>
+    </div>
+  </nav>
+
+  <!-- Floating Circular Back Button -->
+  <div class="fixed top-20 left-4 z-40">
+    <button onclick="history.back()" 
+            class="w-12 h-12 flex items-center justify-center bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+      <i data-feather="arrow-left"></i>
+    </button>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4 text-gray-800 animate-bounce">
+      Publish Your Thoughts
+    </h2>
+    <p class="text-lg md:text-xl text-gray-600 mb-6 max-w-xl">
+      Share your article with us via email, and we’ll publish it here for the world to read.
+    </p>
+    <a href="mailto:jangiddevesh74@gmail.com" 
+       class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-full shadow-lg hover:scale-105 transition transform duration-300">
+       Send Your Article
+    </a>
+  </section>
+
+  <!-- Upcoming Articles -->
+  <section class="container mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">Upcoming Articles</h3>
+    <div class="grid gap-8 md:grid-cols-3">
+      
+      <!-- Article Card -->
+      <div class="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition transform duration-300 reveal">
+        <h4 class="text-xl font-semibold mb-2">The Future of AI</h4>
+        <p class="text-gray-600 mb-4">Exploring how artificial intelligence is shaping tomorrow’s world.</p>
+        <span class="text-sm text-blue-600 font-medium">Coming Soon...</span>
+      </div>
+      
+      <div class="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition transform duration-300 reveal">
+        <h4 class="text-xl font-semibold mb-2">Space Exploration 2030</h4>
+        <p class="text-gray-600 mb-4">A deep dive into humanity’s next big leap beyond Earth.</p>
+        <span class="text-sm text-blue-600 font-medium">Coming Soon...</span>
+      </div>
+      
+      <div class="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition transform duration-300 reveal">
+        <h4 class="text-xl font-semibold mb-2">The Power of Clean Energy</h4>
+        <p class="text-gray-600 mb-4">How renewable energy is transforming global industries.</p>
+        <span class="text-sm text-blue-600 font-medium">Coming Soon...</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>© 2025 Article India | let's Publish your Thoughts.</p>
+  </footer>
+
+  <!-- Scroll Reveal Animations -->
+  <script>
+    ScrollReveal().reveal('.reveal', {
+      delay: 200,
+      distance: '50px',
+      duration: 800,
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      reset: true
+    });
+
+    // Feather icons replace
+    feather.replace();
+  </script>
+
+</body>
+</html>
